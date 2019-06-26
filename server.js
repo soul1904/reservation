@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const table = [];
-const waiting = [];
+const waitlist= [];
 
 app.get("/", (req, res) => {
     // res.send("Welcome to the Star Wars Page!")
@@ -27,7 +27,7 @@ app.get("/reserve", (req, res) => {
 });
 
 app.get("/api/waitlist", (req, res) => {
-    return res.json(waiting);
+    return res.json(waitlist);
 });
 
 app.get("/api/tables", (req, res) => {
