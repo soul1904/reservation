@@ -42,11 +42,11 @@ app.post("/api/reserve", (req, res) => {
     console.log(newReserv);
 
     // We then add the json the user sent to the character array
- if (tables.length > 5 ) {
+ if (table.length > 5 ) {
      waiting.push(newReserv);
  }
  else {
-     tables.push(newReserv);
+     table.push(newReserv);
  }
     // We then display the JSON to the users
     res.json(newReserv);
