@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.get("/tables", (req, res) => {
     // res.send("Welcome to the Star Wars Page!")
-    res.sendFile(path.join(__dirname, "tables.html"));
+    res.sendFile(path.join(__dirname, "table.html"));
 });
 
 app.get("/reserve", (req, res) => {
